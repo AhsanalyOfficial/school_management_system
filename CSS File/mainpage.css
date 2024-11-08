@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Varela+Round&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Varela Round", sans-serif;
+  scroll-behavior: smooth;
+}
+.homepage {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 80px;
+  padding-left: 120px;
+}
+.homepage .home-img {
+  width: 100%;
+  height: auto;
+}
+.homepage .home-img img {
+  width: 100%;
+  height: auto;
+}
+.homepage .content {
+  width: 60%;
+  letter-spacing: 0.2px;
+}
+.content h1 {
+  font-size: 36px;
+  text-shadow: 2px 2px #868494;
+  color: #212121;
+}
+.content p {
+  padding: 25px 0;
+  line-height: 25px;
+  font-size: 18px;
+}
+.content a {
+  text-decoration: none;
+  width: 130px;
+  height: 40px;
+  padding: 10px 16px;
+  cursor: pointer;
+  background-color: #51489c;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+}
+.about-div {
+  width: 100%;
+  height: 70vh;
+  padding: 0 80px 0 120px;
+  margin: 70px 0;
+}
+.about-div .about-para {
+  text-align: center;
+  line-height: 25px;
+  font-size: 18px;
+  padding: 20px 300px;
+}
+.about {
+  width: 100%;
+  height: 40vh;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 100px;
+  place-items: center;
+  padding: 20px 0;
+}
+.about div {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
+  border-radius: 2px;
+}
+.about div img {
+  width: 100%;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.about .hover {
+  border-radius: 2px;
+  position: absolute;
+  overflow-x: hidden;
+  height: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  background-color: transparent;
+  bottom: 0px;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+  box-shadow: none;
+  background-color: rgb(81, 72, 156, 0.9);
+  padding: 0 10px;
+}
+.about .hover h1 {
+  font-size: 34px;
+  text-shadow: 2px 2px #7b6df6;
+  color: rgba(246, 243, 243, 0.8);
+}
+.about .hover p {
+  font-size: 24px;
+  line-height: 30px;
+  padding-top: 6px;
+  text-shadow: 2px 2px #4837e6;
+  color: #fff;
+}
+.about div:hover .hover {
+  visibility: visible;
+  bottom: 0;
+  height: 375px;
+}
+.contact-div {
+  width: 100%;
+  height: 70vh;
+  margin: 70px 0;
+  padding: 0 80px 0 120px;
+  display: inline-table;
+}
+.contact-div h1,
+.about-div h1 {
+  text-align: center;
+  padding: 35px 0;
+  font-size: 42px;
+  text-shadow: 2px 2px #868494;
+  color: #212121;
+}
+.about-div h1 {
+  padding: 0px;
+}
+.contact {
+  width: 100%;
+  height: auto;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 60% 40%;
+}
+.contact form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 100px;
+}
+form input,
+textarea {
+  margin: 10px 0;
+  padding: 10px 14px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  border-bottom: 1.5px solid #7b6df6;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: all 0.8s ease-in-out;
+  font-size: 16px;
+}
+form input:focus,
+textarea:focus {
+  border-bottom: 4px solid #7b6df6;
+}
+form .sub {
+  cursor: pointer;
+  background-color: #51489c;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+}
+.contact .contact-data {
+  width: 55%;
+  text-align: center;
+  border: 1px solid #51489c;
+  background-color: #7b6df6;
+  border-radius: 2px;
+}
+.contact-data div {
+  padding: 20px 0;
+  letter-spacing: 0.4px;
+}
+.contact-data div h3 {
+  padding-bottom: 10px;
+  font-size: 22px;
+  text-shadow: 1.5px 1.5px #212121;
+  color: #fff;
+}
+.contact-data div p {
+  text-shadow: 1.5px 1.5px #212121;
+  color: #fff;
+}
+.contact-data .social .icon {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  color: #fff;
+  padding: 4px 0 0 0;
+  font-size: 25px;
+}

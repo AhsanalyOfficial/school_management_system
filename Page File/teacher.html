@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS File/teacher.css">
+    <!-- Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!--  -->
+    <title>Teacher</title>
+</head>
+
+<body>
+    <div class="teacherTable">
+        <div class="navbar">
+            <h2>Manage <span style="font-weight: bold;">Teacher</span></h2>
+            <!-- <div class="addOrDel">
+                <button id="newAdd" onclick="newStd(this)"><span><ion-icon name="add-outline"></ion-icon></span> Add New
+                    Student</button>
+            </div> -->
+        </div>
+        <div class="pad-table">
+            <table id="teacher_table">
+            </table>
+        </div>
+    </div>
+    <div class="main-config">
+        <form class="teacherConfig">
+            <h3>Teacher Name : <p id="teacher_name"></p>
+            </h3>
+            <select name="" id="teacher_class">
+                <option value="">Select Class</option>
+            </select>
+            <select name="" id="teacher_section">
+            </select>
+            <input type="submit" value="Assigne" class="assigne-btn">
+        </form>
+        <div class="table-div">
+            <table class="classTable">
+            </table>
+        </div>
+        <div class="close" onclick="closeConfig()"><ion-icon name="close"></ion-icon></div>
+    </div>
+    <script src="/JS File/teacher.js"></script>
+</body>

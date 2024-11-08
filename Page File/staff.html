@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff</title>
+    <link rel="stylesheet" href="/CSS File/staff.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <div class="empData">
+        <h1>Add Staff</h1>
+        <form>
+            <label for="firstName">Name</label>
+            <input type="text" id="firstName">
+            <label for="email">Email</label>
+            <input type="email" id="email">
+            <label for="assword">Password</label>
+            <input type="password" id="password">
+            <label for="address">Address</label>
+            <input type="text" id="address">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone">
+            <select name="" id="gender">
+                <option class="opt" value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            <label for="role">Role</label>
+            <select name="" id="Select-Role">
+
+            </select>
+            <div class="addOrCan">
+                <p id="cancelAdd">Cancel</p>
+                <input type="submit" value="Submit" id="submit">
+                <p id="updateData" onclick="updateData()">Update</p>
+            </div>
+        </form>
+    </div>
+    <div class="table-container">
+        <div class="navbar">
+            <h2>Manage <span style="font-weight: bold;">Staff</span></h2>
+            <div class="addOrDel">
+                <button id="allDel" onclick="rowsDel()"><span><ion-icon name="remove-outline"></ion-icon></span>
+                    Delete</button>
+                <button id="newAdd"><span><ion-icon name="add-outline"></ion-icon></span> Add New Employee</button>
+            </div>
+        </div>
+        <div class="table-cont">
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                        <th>Address</th>
+                        <th>Phone</th>
+                        <th>Gender</th>
+                        <th>Status</th>
+                        <th>Role</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="/JS File/staff.js"></script>
+    <!-- //////////////////////////////// -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- //////////////////////////////// -->
+</body>
+
+</html>

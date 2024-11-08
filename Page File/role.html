@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Role</title>
+    <link rel="stylesheet" href="/CSS File/role.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="role">
+            <form>
+                <h1>ADD Role</h1>
+                <input type="text" placeholder="Role Name" id="role-name">
+                <input type="text" placeholder="Role ID" id="role-id">
+                <div class="label">
+                    <input type="checkbox" name="" id="employee">
+                    <label for="admin">Can Manage Staff</label>
+                </div>
+                <div class="label">
+                    <input type="checkbox" name="" id="role">
+                    <label for="superAdmin">Can Manage Role</label>
+                </div>
+                <div class="label">
+                    <input type="checkbox" name="" id="student">
+                    <label for="HR">Can Manage Students</label>
+                </div>
+                <div class="label">
+                    <input type="checkbox" name="" id="class">
+                    <label for="employee">Can Manage Classes</label>
+                </div>
+                <div class="label">
+                    <input type="checkbox" name="" id="section">
+                    <label for="employee">Can Manage Sections</label>
+                </div>
+                <div class="label">
+                    <input type="checkbox" name="" id="subject">
+                    <label for="employee">Can Manage Subjects</label>
+                </div>
+                <div class="label">
+                    <input type="checkbox" name="" id="attendence">
+                    <label for="employee">Can Manage Attendences</label>
+                </div>
+                <div class="label">
+                    <input type="checkbox" name="" id="teacher">
+                    <label for="employee">Can Manage Teacher</label>
+                </div>
+                <input type="submit" value="Submit" class="submit">
+            </form>
+            <div class="table-container">
+                <table id="table">
+                    <thead>
+                        <tr>
+                            <th>Role Name</th>
+                            <th>Role ID</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                    </tbody>
+
+            </div>
+            </table>
+        </div>
+    </div>
+    <script src="/JS File/role.js"></script>
+    <!-- //////////////////////////////// -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- //////////////////////////////// -->
+</body>
+
+</html>

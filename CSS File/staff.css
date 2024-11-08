@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Varela+Round&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Varela Round", sans-serif;
+}
+.empData {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  position: fixed;
+  z-index: 1;
+  left: 33%;
+  overflow: hidden;
+  transition: all 0.6s ease-in-out;
+  background-color: #fff;
+  height: auto;
+  top: -100%;
+  position: absolute;
+}
+.empData h1 {
+  color: #566787;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 16px 20px;
+  background-color: #dcdde1;
+}
+form {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+  padding: 20px;
+  border-bottom: 1px solid #bdc3c7;
+  border-left: 1px solid #bdc3c7;
+  border-right: 1px solid #bdc3c7;
+}
+form label {
+  color: #566787;
+  font-weight: 550;
+}
+form input {
+  width: 100%;
+  padding: 4px 12px;
+  outline: none;
+  border: none;
+  border: 1px solid #bdc3c7;
+  font-size: 14px;
+  background-color: transparent;
+}
+form select {
+  border: 1px solid #bdc3c7;
+  appearance: none;
+  padding: 4px 10px;
+  width: 100%;
+  color: #34495e;
+  background-color: #fff;
+  font-size: 14px;
+}
+/*  */
+
+/*  */
+form .addOrCan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+form .addOrCan p {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 37px;
+  background-color: #28a745;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 2px;
+  text-align: center;
+}
+form #submit {
+  width: 100px;
+  height: 37px;
+  background-color: #28a745;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 2px;
+}
+form #submit:hover {
+  background-color: #218838;
+}
+.table-container {
+  width: 85%;
+  margin: 110px auto;
+  border-radius: 4px;
+  box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+}
+.table-container .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 30px;
+  background-color: #487eb0;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.table-container .navbar h2 {
+  color: #fff;
+  font-weight: 200;
+}
+.table-container .navbar .addOrDel {
+  display: flex;
+  gap: 8px;
+}
+.table-container .navbar .addOrDel button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 2px;
+  border: none;
+}
+.table-container .navbar .addOrDel button:nth-child(1) {
+  color: #fff;
+  background-color: #e74c3c;
+}
+.table-container .navbar .addOrDel button:nth-child(2) {
+  color: #fff;
+  background-color: #28a745;
+}
+.table-container .navbar .addOrDel button:nth-child(1):hover {
+  background-color: #c0392b;
+}
+.table-container .navbar .addOrDel button:nth-child(2):hover {
+  background-color: #218838;
+}
+.table-container .navbar .addOrDel button span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: #34495e;
+  border-radius: 50px;
+  padding: 2px;
+  font-size: 16px;
+}
+
+.table-cont {
+  padding: 10px 30px 16px 30px;
+}
+#table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: auto;
+  text-align: left;
+}
+#table tr:nth-child(1) {
+  border-bottom: 1px solid #ecf0f1;
+  border-top: 1px solid #ecf0f1;
+}
+#table tr:nth-child(2) {
+  border-top: 2px solid #ecf0f1;
+}
+#table th {
+  text-align: left;
+}
+#table #allCheck {
+  width: 18px;
+  height: 18px;
+}
+#table td,
+#table th {
+  border-bottom: 1px solid #ecf0f1;
+  text-align: left;
+  padding: 18px 20px;
+}
+.thirdRow {
+  display: flex;
+  gap: 20px;
+}
+.editRow,
+.deleteRow {
+  border: none;
+  font-size: 22px;
+  color: #f39c12;
+  outline: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+.deleteRow {
+  color: #e74c3c;
+}
+.stateStyle {
+  font-size: 14px;
+  padding: 6px 10px;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 3px;
+  background-color: #28a745;
+}
+.pad #tableBody tr td input {
+  width: 100%;
+}

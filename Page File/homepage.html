@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!--  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--  -->
+    <link rel="stylesheet" href="/CSS File/homepage.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <span onclick="openNav()"><ion-icon class="menu-icon" name="menu"></ion-icon></span>
+            <h2>School Management System</h2>
+        </div>
+        <div class="menu">
+            <a href="#homepage">Home</a>
+            <a href="#">About</a>
+            <a href="#">Condition</a>
+            <a href="#">Contatc us</a>
+        </div>
+        <div class="profile" onclick="showlogout()">
+            <div class="logName">Name</div>
+            <img src="/img/pro.png" alt="">
+            <p class="logout" onclick="logout()">Logout</p>
+        </div>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" id="sideBar" onclick="closeNav()">&times;</a>
+        <div class="sideIcon">
+            <ion-icon name="arrow-redo"></ion-icon>
+            <a href="#1" id="sideBar" class="home" onclick="loadContent('admin.html')">Admin</a>
+        </div>
+        <div class="sideIcon">
+            <ion-icon name="accessibility"></ion-icon>
+            <a href="#2" id="sideBar" class="staff" onclick="loadContent('staff.html')">Staff</a>
+        </div>
+        <div class="sideIcon">
+            <ion-icon name="settings"></ion-icon>
+            <a href="#" id="sideBar" class="role" onclick="loadContent('role.html')">Role</a>
+        </div>
+        <div class="sideIcon">
+            <ion-icon name="man"></ion-icon>
+            <a href="#" id="sideBar" class="student" onclick="loadContent('student.html')">Students</a>
+        </div>
+        <div class="sideIcon">
+            <ion-icon name="business"></ion-icon>
+            <a href="#" id="sideBar" class="class" onclick="loadContent('class.html')">Classes</a>
+        </div>
+        <div class="sideIcon">
+            <ion-icon name="business"></ion-icon>
+            <a href="#" id="sideBar" class="section" onclick="loadContent('secton.html')">Sections</a>
+        </div>
+        <div class="sideIcon">
+            <ion-icon name="business"></ion-icon>
+            <a href="#" id="sideBar" class="subject" onclick="loadContent('subject.html')">Subject</a>
+        </div>
+        <div class="sideIcon">
+            <ion-icon name="finger-print"></ion-icon>
+            <a href="#" id="sideBar" class="attendence" onclick="loadContent('attendences.html')">Attendences</a>
+        </div>
+        <div class="sideIcon">
+            <ion-icon name="man"></ion-icon>
+            <a href="#" id="sideBar" class="teacher" onclick="loadContent('teacher.html')">Teacher</a>
+        </div>
+    </div>
+    <iframe style="width: 100%;height: 99.4vh;" id="content" src="mainpage.html"></iframe>
+    <!--  -->
+
+
+    <script src="/JS File/homepage.js"></script>
+</body>
+
+</html>

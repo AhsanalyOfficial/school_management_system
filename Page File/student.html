@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!--  -->
+    <link rel="stylesheet" href="/CSS File/student.css">
+    <title>Student</title>
+</head>
+
+<body>
+    <div class="form-div">
+        <h2>ADD Data</h2>
+        <form id="std_form">
+            <input type="text" placeholder="First Name" id="f_name">
+            <input type="text" placeholder="Last Name" id="l_name">
+            <input type="date" placeholder="Date of Birth" id="date_birth">
+            <input type="text" placeholder="Institute" id="institute">
+            <select name="" id="class_select">
+                <option value="">Select Class</option>
+            </select>
+            <select name="" id="section_select"></select>
+            <div></div>
+            <input type="submit" id="subBtn" value="Submit">
+            <div id="updateStdData" onclick="updateStudentData()"></div>
+            <div class="close" onclick="closeForm()"><ion-icon name="close"></ion-icon></div>
+        </form>
+    </div>
+    <div class="table-div">
+        <div class="navbar">
+            <h2>Manage <span style="font-weight: bold;">Student</span></h2>
+            <div class="addOrDel">
+                <button id="newAdd" onclick="newStd(this)"><span><ion-icon name="add-outline"></ion-icon></span> Add New
+                    Student</button>
+            </div>
+        </div>
+        <div class="pad-table">
+            <table class="stdTable">
+            </table>
+        </div>
+    </div>
+    <script src="/JS File/student.js"></script>
+</body>
+
+</html>

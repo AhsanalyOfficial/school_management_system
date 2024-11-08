@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Varela+Round&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Varela Round", sans-serif;
+}
+.teacherTable {
+  width: 80%;
+  margin: 100px auto;
+  border-radius: 4px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.teacherTable table {
+  border-collapse: collapse;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  text-align: left;
+}
+.teacherTable table thead tr:nth-child(1) {
+  border-top: 2px solid #ecf0f1;
+  border-bottom: 2px solid #ecf0f1;
+}
+
+.teacherTable table td,
+.teacherTable table th {
+  border-bottom: 1px solid #ecf0f1;
+  text-align: center;
+  padding: 12px 20px;
+}
+.teacherTable table th {
+  text-align: center;
+  padding: 16px 0;
+}
+.configer {
+  border: none;
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+  color: #f39c12;
+  background-color: #fff;
+  cursor: pointer;
+}
+.main-config {
+  height: 0px;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: -8%;
+  left: 25%;
+  background-color: #487eb0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding: 20px;
+  border-radius: 4px;
+  letter-spacing: 0.2px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.teacherConfig h3 {
+  display: flex;
+  gap: 10px;
+  color: #fff;
+  padding-bottom: 15px;
+  font-size: 20px;
+}
+.teacherConfig h3 p {
+  font-weight: lighter;
+}
+.teacherConfig .assigne-btn {
+  padding: 7px 10px;
+  background-color: #2e286b;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.teacherConfig select {
+  appearance: none;
+  padding: 6px;
+  width: 20%;
+  color: #34495e;
+  font-size: 14px;
+  border-radius: 2px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin-bottom: 10px;
+}
+.deleteRow {
+  color: red;
+  cursor: pointer;
+  background-color: #ecf0f1;
+  border: none;
+  outline: none;
+  font-size: 17px;
+}
+/*  */
+.table-div {
+  width: 80%;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+  padding: 16px 30px 16px 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background-color: #ecf0f1;
+}
+.table-div table {
+  border-collapse: collapse;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  text-align: left;
+}
+.table-div table thead tr:nth-child(1) {
+  border-top: 2px solid #212121;
+  border-bottom: 2px solid #212121;
+}
+
+.table-div table thead th {
+  text-align: center;
+  padding: 14px 0;
+}
+.table-div table td,
+.table-div table th {
+  border-bottom: 1px solid #212121;
+  text-align: center;
+  padding: 8px 20px;
+}
+.close {
+  font-size: 30px;
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  color: #fff;
+  cursor: pointer;
+}
+.close:hover {
+  color: #ecf0f1;
+}
+/* /////////////// */
+.navbar {
+  padding: 20px 30px;
+  background-color: #487eb0;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.navbar h2 {
+  color: #fff;
+  font-weight: 200;
+}
+.pad-table {
+  padding: 10px 30px 30px 30px;
+}
